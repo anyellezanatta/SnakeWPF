@@ -1,0 +1,18 @@
+﻿<Window xmlns:my="clr-namespace:Snake.Control"  x:Class="Snake.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Snake!" Width="642" Height="482">
+    
+    <Grid x:Name="LayoutRoot" Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <my:UserPanel Grid.Row="0" x:Name="panel"/>
+        
+        <Canvas Name="paintCanvas" Background="Black" Grid.Row="1" HorizontalAlignment="Stretch" 
+                MaxWidth="642" MaxHeight="422">
+        </Canvas>
+    </Grid>
+</Window>
